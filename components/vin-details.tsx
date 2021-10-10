@@ -20,7 +20,7 @@ export const VinDetails: React.FC<{ vin: string, reset: () => void }> = (props) 
           status: string, data: {
             technicalCampaigns: [{ [key: string]: string }]
           }
-        }>(`https://vehiclerecall.bmwgroup.com/api/recall?vin=${vin}&market=GB`, {
+        }>(`https://vehiclerecall.bmwgroup.com/api/recall?vin=${vin}`, {
           headers: {
             Authorization: 'Basic T2xpdmVyOkRybEJpR29TajNlM1BITHE=',
           },
