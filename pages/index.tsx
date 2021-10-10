@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
-import { VinForm } from './_form'
-import { VinDetails } from './_vinDetails'
+import { VinForm } from '../components/vin-form'
+import { VinDetails } from '../components/vin-details'
 
 const Home: NextPage = () => {
   const [vin, setVin] = React.useState('')
