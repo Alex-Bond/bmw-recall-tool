@@ -1,8 +1,9 @@
 import React from 'react'
 import axios from 'axios'
+import Link from 'next/link'
 
-export const VinDetails: React.FC<{ vin: string, reset: () => void }> = (props) => {
-  const { vin, reset } = props
+export const VinDetails: React.FC<{ vin: string }> = (props) => {
+  const { vin } = props
 
   const [isLoading, setIsLoading] = React.useState(true)
   const [isSuccess, setIsSuccess] = React.useState(false)
@@ -78,14 +79,14 @@ export const VinDetails: React.FC<{ vin: string, reset: () => void }> = (props) 
             ))}
             </tbody>
           </table>
-          <a className='btn btn-primary btn-block' onClick={() => reset()}>Try different VIN</a>
+          <Link href='/'><a className='btn btn-primary btn-block'>Try different VIN</a></Link>
         </>
       )
     } else {
       return (
         <>
           <h2>Error while requesting details: {errorMessage}</h2>
-          <a className='btn btn-primary btn-block' onClick={() => reset()}>Try different VIN</a>
+          <Link href='/'><a className='btn btn-primary btn-block'>Try different VIN</a></Link>
         </>
       )
     }

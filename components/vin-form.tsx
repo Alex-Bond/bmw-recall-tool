@@ -1,15 +1,14 @@
 import React from 'react'
 
-export const VinForm: React.FC<{ setVin: ((value: string) => void) }> = (props) => {
-  const { setVin } = props
+export const VinForm: React.FC = () => {
   return (
     <form onSubmit={event => {
       // @ts-ignore
       const value: string = event.target.vin.value
       if (value.length != 17) {
+        event.preventDefault()
+        event.stopPropagation()
         alert('VIN must be exactly 17 chars/digits')
-      } else {
-        setVin(value)
       }
     }}>
       <div className='mb-3'>

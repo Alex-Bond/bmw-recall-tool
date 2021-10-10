@@ -1,11 +1,21 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { VinForm } from '../components/vin-form'
 import { VinDetails } from '../components/vin-details'
+import { useRouter } from 'next/router'
 
 const Home: NextPage = () => {
-  const [vin, setVin] = React.useState('')
+  const router = useRouter()
+  const { vin } = router.query
+
+  useEffect(() => {
+    if (Array.isArray(vin) || (vin && vin.length != 17)) {
+      router.push('/')
+    }
+  }, [router, vin])
+
+  if (Array.isArray(vin) || (vin && vin.length != 17)) return (<></>)
 
   return (
     <div className='container'>
@@ -20,7 +30,9 @@ const Home: NextPage = () => {
       <div className='row'>
         <div className='col-12'>
           <h1>BMW Recall Info Tool</h1>
-          {!vin.length ? <VinForm setVin={setVin} /> : <VinDetails vin={vin} reset={() => setVin('')} />}
+          {!vin
+            ? <VinForm />
+            : <VinDetails vin={vin} />}
 
           <div className='pt-5'>
             <small>Source code of the tool on GitHub: <a href='https://github.com/Alex-Bond/bmw-recall-tool'
