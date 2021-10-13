@@ -50,36 +50,41 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
       return (
         <>
           <h2>Results for VIN {vin}</h2>
-          <table className='table'>
-            <thead>
-            <tr>
-              <th>Recall Type</th>
-              <th>Defect Code</th>
-              <th>Defect Code Description</th>
-              <th>Reservation Date</th>
-              <th>Vin Status</th>
-              <th>Reservation Dealer</th>
-              <th>Customer Notification</th>
-              <th>Error Flag</th>
-              <th>Error Message</th>
-            </tr>
-            </thead>
-            <tbody>
-            {response?.data.technicalCampaigns.map(item => (
-              <tr key={item.defectCode}>
-                <td>{item.recallType}</td>
-                <td>{item.defectCode}</td>
-                <td>{item.defectCodeDescription?.length ? item.defectCodeDescription : DefectCodeInfo[item.defectCode]?.defectCodeDescription}</td>
-                <td>{item.reservationDate}</td>
-                <td>{item.vinStatus}</td>
-                <td>{item.reservationDealer}</td>
-                <td>{item.customerNotification}</td>
-                <td>{item.ErrorFlag}</td>
-                <td>{item.ErrorMessage}</td>
+          {response?.data?.technicalCampaigns?.length ? (
+            <table className='table'>
+              <thead>
+              <tr>
+                <th>Recall Type</th>
+                <th>Defect Code</th>
+                <th>Defect Code Description</th>
+                <th>Reservation Date</th>
+                <th>Vin Status</th>
+                <th>Reservation Dealer</th>
+                <th>Customer Notification</th>
+                <th>Error Flag</th>
+                <th>Error Message</th>
               </tr>
-            ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+              {response?.data.technicalCampaigns.map(item => (
+                <tr key={item.defectCode}>
+                  <td>{item.recallType}</td>
+                  <td>{item.defectCode}</td>
+                  <td>{item.defectCodeDescription?.length ? item.defectCodeDescription : DefectCodeInfo[item.defectCode]?.defectCodeDescription}</td>
+                  <td>{item.reservationDate}</td>
+                  <td>{item.vinStatus}</td>
+                  <td>{item.reservationDealer}</td>
+                  <td>{item.customerNotification}</td>
+                  <td>{item.ErrorFlag}</td>
+                  <td>{item.ErrorMessage}</td>
+                </tr>
+              ))}
+              </tbody>
+            </table>
+          ) : (
+            <h3 className='my-5'>No open issues found</h3>
+          )}
+
           <Link href='/'><a className='btn btn-primary btn-block'>Try different VIN</a></Link>
         </>
       )
