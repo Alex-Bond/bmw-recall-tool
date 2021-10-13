@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Link from 'next/link'
+import { DefectCodeInfo } from '../constants/defect-code-info'
 
 export const VinDetails: React.FC<{ vin: string }> = (props) => {
   const { vin } = props
@@ -68,7 +69,7 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
               <tr key={item.defectCode}>
                 <td>{item.recallType}</td>
                 <td>{item.defectCode}</td>
-                <td>{item.defectCodeDescription}</td>
+                <td>{item.defectCodeDescription?.length ? item.defectCodeDescription : DefectCodeInfo[item.defectCode]?.defectCodeDescription}</td>
                 <td>{item.reservationDate}</td>
                 <td>{item.vinStatus}</td>
                 <td>{item.reservationDealer}</td>
