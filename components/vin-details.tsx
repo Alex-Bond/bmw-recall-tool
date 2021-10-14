@@ -107,8 +107,8 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
               or <code>closed</code> for fixed items.
             </li>
             <li>
-              <strong>Code Descriptions</strong> was removed from API recently, but I'm trying to map known defect codes
-              to descriptions. If you don't see a description for specific code but know what it is, please submit the
+              <strong>Code Descriptions</strong> was removed from API recently, but I&apos;m trying to map known defect codes
+              to descriptions. If you don&apos;t see a description for specific code but know what it is, please submit the
               issue on GitHub, and I will add it to the tool.
             </li>
           </ul>
