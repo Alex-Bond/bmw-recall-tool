@@ -17,4 +17,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0066570100': {
     defectCodeDescription: 'Checking the installation of the camera and TRSVC control unit, retrofitting if necessary',
   },
+  '0012610500': {
+    defectCodeDescription: 'Program control units (DME)',
+  },
 }
