@@ -20,4 +20,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0012610500': {
     defectCodeDescription: 'Program control units (DME)',
   },
+  '0065600300': {
+    defectCodeDescription: 'Checking the installation of amplifier, retrofitting if necessary (note: not confirmed message)',
+  },
 }
