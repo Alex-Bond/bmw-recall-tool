@@ -24,7 +24,7 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
           }
         }>(`https://vehiclerecall.bmwgroup.com/api/recall?vin=${vin}`, {
           headers: {
-            Authorization: 'Basic TTJiNG1oMnR1Q0plZ1VmOkkyQlZJQ0dKS0dLR0xHV2dGS0dIRkZLSGxaVE9F',
+            Authorization: 'Basic TTJiNG1oMnR1Q0plZ1VmOkkyQlZLU0dGRFlQSUNHSktHS0dMR1dnRktHSEZGS0hsWlRPRQ==',
           },
         })
         if (result.data.status == 'OK') {
@@ -37,7 +37,7 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
         }
       } catch (e) {
         if (axios.isAxiosError(e)) {
-          if (e.code == '401' || e.code == '403') {
+          if (e.response?.status == 401 || e.response?.status == 403) {
             setErrorMessage('Ahh... BMW changed things again. Server response code 401.')
             setIsLoading(false)
             return
