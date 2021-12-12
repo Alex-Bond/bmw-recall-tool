@@ -26,4 +26,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0061230600': {
     defectCodeDescription: 'Vehicle battery insert check (note: not confirmed message)',
   },
+  '0084860100': {
+    defectCodeDescription: 'Program Telematics Control Unit (ATM)',
+  },
 }
