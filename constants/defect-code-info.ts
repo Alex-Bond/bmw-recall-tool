@@ -29,4 +29,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0084860100': {
     defectCodeDescription: 'Program Telematics Control Unit (ATM)',
   },
+  '0011240600': {
+    defectCodeDescription: 'Replace the Main Bearing Shells'
+  }
 }
