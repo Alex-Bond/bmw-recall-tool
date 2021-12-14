@@ -24,7 +24,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
     defectCodeDescription: 'Checking the installation of amplifier, retrofitting if necessary (note: not confirmed message)',
   },
   '0061230600': {
-    defectCodeDescription: 'Vehicle battery insert check (note: not confirmed message)',
+    defectCodeDescription: 'Vehicle battery insert check',
   },
   '0084860100': {
     defectCodeDescription: 'Program Telematics Control Unit (ATM)',
