@@ -31,5 +31,8 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0011240600': {
     defectCodeDescription: 'Replace the Main Bearing Shells'
+  },
+  '10065640300': {
+    defectCodeDescription: 'Programming Control Units (CID) Delivery Stop'
   }
 }
