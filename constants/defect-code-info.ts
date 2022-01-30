@@ -34,5 +34,8 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '10065640300': {
     defectCodeDescription: 'Programming Control Units (CID) Delivery Stop'
-  }
+  },
+  '0066640100': {
+    defectCodeDescription: 'Retrofit PMA Control Unit'
+  },
 }
