@@ -38,4 +38,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0066640100': {
     defectCodeDescription: 'Retrofit PMA Control Unit'
   },
+  '0012690500': {
+    defectCodeDescription: 'Program the Digital Motor Electronics (MDE)'
+  },
 }
