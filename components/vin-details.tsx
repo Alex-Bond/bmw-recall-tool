@@ -24,7 +24,7 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
           }
         }>(`https://vehiclerecall.bmwgroup.com/api/recall?vin=${vin}`, {
           headers: {
-            Authorization: 'Basic TTJiNG1oMnR1Q0plZ1VmOkkyQlZLU0dGRFlQSUNHSktHS0dMRFJUWU9IR1dBSUZLR0hGRktIbFpUT0U=',
+            Authorization: 'Basic U2FsdGVkX196bxxUX8M+hQ8ULkOY+adCucrhez64bXmKayl7/K8WmJ0xyiLAUbAQC/AVlc4yVD+aMqKbuANDt6Vt7tdxrHRLdoztw3wRu2U9THNXZTS20PyUoiIVYYPtkX1qP9pE4ZQsB5rFQGpVog==',
           },
         })
         if (result.data.status == 'OK') {
