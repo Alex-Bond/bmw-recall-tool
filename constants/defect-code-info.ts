@@ -41,4 +41,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0012690500': {
     defectCodeDescription: 'Program the Digital Motor Electronics (MDE)'
   },
+  '0065740300': {
+    defectCodeDescription: 'Programming control units (head unit)'
+  },
 }
