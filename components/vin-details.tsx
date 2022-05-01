@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import Link from 'next/link'
 import { DefectCodeInfo } from '../constants/defect-code-info'
+import { ApiClient } from '../services/api.client'
 
 export const VinDetails: React.FC<{ vin: string }> = (props) => {
   const { vin } = props
@@ -18,15 +19,8 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
   React.useEffect(() => {
     (async function req() {
       try {
-        const result = await axios.get<{
-          status: string, data: {
-            technicalCampaigns: [{ [key: string]: string }]
-          }
-        }>(`https://vehiclerecall.bmwgroup.com/api/recall?vin=${vin}`, {
-          headers: {
-            Authorization: 'Basic U2FsdGVkX196bxxUX8M+hQ8ULkOY+adCucrhez64bXmKayl7/K8WmJ0xyiLAUbAQC/AVlc4yVD+aMqKbuANDt6Vt7tdxrHRLdoztw3wRu2U9THNXZTS20PyUoiIVYYPtkX1qP9pE4ZQsB5rFQGpVog==',
-          },
-        })
+        const client = new ApiClient()
+        const result = await client.getVinRecals(vin)
         if (result.data.status == 'OK') {
           setResponse(result.data)
           setIsSuccess(true)
@@ -57,7 +51,7 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
       return (
         <>
           <h2>Results for VIN {vin}</h2>
-          {response?.data?.technicalCampaigns?.length ? (
+          {response?.data.technicalCampaigns?.length ? (
             <>
               <table className='table'>
                 <thead>
