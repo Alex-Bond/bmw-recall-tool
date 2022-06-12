@@ -2,7 +2,7 @@ import { Handler } from '@netlify/functions'
 import axios from 'axios'
 
 const CryptoJS = require('node-cryptojs-aes').CryptoJS
-const accessToken = 'TTJiNG1oMnR1Q0plZ1VmOkkyQlZLU0dGRFlQSUNHSktHS0dMRFJUWU9IR1dBSUZLR0hGRktIbFpUT0U='
+const accessToken = 'TTJiNG1oMnR1Q0plZ1VmOkkyQlZLU0dGRFlQSUNHSktHS0dKR1ZKSEZMRkdXZ0ZLR0hGRktIbFpUT0U='
 
 const handler: Handler = async (event, context) => {
   if (event.httpMethod != 'POST') return { statusCode: 200 }
