@@ -12,7 +12,7 @@ const handler: Handler = async (event, context) => {
     status: string, data: {
       technicalCampaigns: [{ [key: string]: string }]
     }
-  }>(`https://vehiclerecall.bmwgroup.com/api/recall?vin=${vin}&market=GB`, {
+  }>(`https://vehiclerecall.bmwgroup.com/api/recall?vin=${vin}&market=GB&language=EN`, {
     headers: {
       Authorization: `Basic ${CryptoJS.AES.encrypt(accessToken.trim(), 'hdlurn13bjdlnvld').toString()}`,
       Referer: 'https://vehiclerecall.bmwgroup.com/index.html?brand=bmw&market=uk&language=en',
