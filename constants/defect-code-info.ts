@@ -44,4 +44,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0065740300': {
     defectCodeDescription: 'Programming control units (head unit)'
   },
+  '0065830300': {
+    defectCodeDescription: 'Programming control units (head unit)'
+  },
 }
