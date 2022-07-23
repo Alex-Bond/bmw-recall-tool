@@ -30,6 +30,13 @@ const Home: NextPage = () => {
       <div className='row'>
         <div className='col-12'>
           <h1>BMW Recall Info Tool</h1>
+
+          <div className='alert alert-danger'>
+            <strong>July 23 2022</strong> - BMW recall API is now down for a couple of days. Some of you reached out to
+            me about it. I&apos;m aware, and unfortunately, we all have to wait until they fix it. <br /> You can continue
+            trying to use the tool, but if it returns a 502 error, API is still unavailable.
+          </div>
+
           {!vin
             ? <VinForm />
             : <VinDetails vin={vin} />}
