@@ -47,4 +47,34 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0065830300': {
     defectCodeDescription: 'Programming control units (head unit)'
   },
+  '0065820300': {
+    defectCodeDescription: 'Recall: Valet Parking Mode - Programming control units (head unit)'
+  },
+  '0061880600': {
+    defectCodeDescription: 'Checking the high-voltage connection field and replacing it if necessary'
+  },
+  '0061860600': {
+    defectCodeDescription: 'Retrofitting the standard charging cable (mode 2) for domestic socket outlets'
+  },
+  '0065630300': {
+    defectCodeDescription: 'Retrofitting the central information display'
+  },
+  '0084980100': {
+    defectCodeDescription: 'Programming the control units (quality measures)'
+  },
+  '0065750300': {
+    defectCodeDescription: 'Programming control units (airbag control unit)'
+  },
+  '0065780300': {
+    defectCodeDescription: 'Programming control units part II (airbag control unit)'
+  },
+  'INFO123825': {
+    defectCodeDescription: 'I20 - ADCAM low Zertifikatefehler bei Programmierung'
+  },
+  '0065800300': {
+    defectCodeDescription: 'Programming control units (head unit)'
+  },
+  '0065810300': {
+    defectCodeDescription: 'Programming control units (head unit)'
+  },
 }
