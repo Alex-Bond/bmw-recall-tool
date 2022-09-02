@@ -77,4 +77,10 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0065810300': {
     defectCodeDescription: 'Programming control units (head unit)'
   },
+  '0032350300': {
+    defectCodeDescription: 'G26 Program Control Unit (software update)'
+  },
+  '0061030700': {
+    defectCodeDescription: 'G26 Body Domain Controller unit replacement'
+  }
 }
