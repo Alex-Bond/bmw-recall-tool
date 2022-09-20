@@ -82,5 +82,8 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0061030700': {
     defectCodeDescription: 'G26 Body Domain Controller unit replacement'
-  }
+  },
+  '0061960600': {
+    defectCodeDescription: 'Recall: High-Voltage Battery'
+  },
 }
