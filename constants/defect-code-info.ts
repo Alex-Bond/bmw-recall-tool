@@ -86,4 +86,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0061960600': {
     defectCodeDescription: 'Recall: High-Voltage Battery'
   },
+  '0028110100': {
+    defectCodeDescription: 'Programming control units (DKG)'
+  },
 }
