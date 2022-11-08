@@ -89,4 +89,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0028110100': {
     defectCodeDescription: 'Programming control units (DKG)'
   },
+  '0084140200': {
+    defectCodeDescription: 'Зrogramming the telematics control unit'
+  },
 }
