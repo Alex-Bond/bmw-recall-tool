@@ -95,4 +95,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0061400700': {
     defectCodeDescription: 'Program Control Units (SME) - battery management electronics module'
   },
+  '0041160200': {
+    defectCodeDescription: 'Check the roofing sheet for bonding'
+  },
 }
