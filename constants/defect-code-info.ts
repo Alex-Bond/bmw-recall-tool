@@ -92,4 +92,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0084140200': {
     defectCodeDescription: 'Programming the telematics control unit'
   },
+  '0061400700': {
+    defectCodeDescription: 'Program Control Units (SME) - battery management electronics module'
+  },
 }
