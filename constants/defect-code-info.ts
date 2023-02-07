@@ -90,12 +90,21 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
     defectCodeDescription: 'Programming control units (DKG)'
   },
   '0084140200': {
-    defectCodeDescription: 'Programming the telematics control unit'
+    defectCodeDescription: 'Programming the telematics control unit',
   },
   '0061400700': {
-    defectCodeDescription: 'Program Control Units (SME) - battery management electronics module'
+    defectCodeDescription: 'Program Control Units (SME) - battery management electronics module',
   },
   '0041160200': {
-    defectCodeDescription: 'Check the roofing sheet for bonding'
+    defectCodeDescription: 'Check the roofing sheet for bonding',
+  },
+  '0013850300': {
+    defectCodeDescription: 'Program control units (DDE) due to deposits in the intake system',
+  },
+  '0061640400': {
+    defectCodeDescription: 'Program control units (GWS)',
+  },
+  '0065980300': {
+    defectCodeDescription: 'Booster Control Unit',
   },
 }
