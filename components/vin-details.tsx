@@ -25,7 +25,10 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
           setResponse(result.data)
           setIsSuccess(true)
           setIsLoading(false)
-        } else {
+        } else if(result.data.data.allowAccess == false) {
+          setErrorMessage('BMW system under maintenance (again)')
+          setIsLoading(false)
+        }else {
           setErrorMessage(result.data.status)
           setIsLoading(false)
         }

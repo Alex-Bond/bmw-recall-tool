@@ -7,6 +7,7 @@ export class ApiClient {
         status: string,
         data: {
           technicalCampaigns: [{ [key: string]: string }]
+          allowAccess?: boolean
         }
       }
     }>(
