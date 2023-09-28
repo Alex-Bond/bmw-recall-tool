@@ -4,7 +4,7 @@ import axios from 'axios'
 const CryptoJS = require('node-cryptojs-aes').CryptoJS
 const accessToken = 'VmVoaWNsZVJlY2FsbFVJOkkyQlZJQ0dXZ29qeGI0ZEI='
 
-const handler: Handler = async (event, context) => {
+export const handler: Handler = async (event, context) => {
   if (event.httpMethod != 'POST') return { statusCode: 200 }
   if (!event.body) throw new Error('Wrong request')
   const { vin } = JSON.parse(event.body)
@@ -18,9 +18,11 @@ const handler: Handler = async (event, context) => {
       Referer: 'https://vehiclerecall.bmwgroup.com/index.html?brand=bmw&market=uk&language=en',
       isHitFromUI: 'true',
       FromUI: 'true',
+      Fromui: 'true',
       'X-Frame-Options': 'deny',
       'Content-Type': 'application/json',
       Accept: 'application/json',
+      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
     },
   })
   console.log(resp.data)
@@ -29,5 +31,3 @@ const handler: Handler = async (event, context) => {
     body: JSON.stringify(resp.data),
   }
 }
-
-export { handler }
