@@ -35,7 +35,7 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
       } catch (e) {
         if (axios.isAxiosError(e)) {
           if (e.response?.status == 401 || e.response?.status == 403) {
-            setErrorMessage('Ahh... BMW changed things again. Server response code 401.')
+            setErrorMessage(`Ahh... BMW changed things again. Server response code ${e.response.status}.`)
             setIsLoading(false)
             return
           }
