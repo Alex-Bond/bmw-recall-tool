@@ -117,6 +117,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
     defectCodeDescription: 'Seat rail recall'
   },
   '0065210400': {
-    defectCodeDescription: 'I20 Program control units (head unit)'
+    defectCodeDescription: 'Program control units (head unit)'
+  },
+  '0061850700': {
+    defectCodeDescription: 'Program control units (SME)'
   }
 }
