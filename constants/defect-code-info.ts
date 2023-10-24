@@ -107,4 +107,13 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0065980300': {
     defectCodeDescription: 'Booster Control Unit',
   },
+  '0061100800': {
+    defectCodeDescription: 'Wiper mechanism recall'
+  },
+  '0032470300': {
+    defectCodeDescription: 'Steering wheel ground connection recall'
+  },
+  '0052130200': {
+    defectCodeDescription: 'Seat rail recall'
+  }
 }
