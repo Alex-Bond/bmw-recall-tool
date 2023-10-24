@@ -121,5 +121,8 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0061850700': {
     defectCodeDescription: 'Program control units (SME)'
+  },
+  '0012940500': {
+    defectCodeDescription: 'Electric Front Axle Drive Unit'
   }
 }
