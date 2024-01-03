@@ -127,5 +127,8 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0012890500': {
     defectCodeDescription: 'Program Control Unit (DME)'
-  }
+  },
+  '0061020800': {
+    defectCodeDescription: 'Verify cable bundle in the bumper'
+  },
 }
