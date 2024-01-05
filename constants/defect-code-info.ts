@@ -173,4 +173,22 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '10072500200': {
     defectCodeDescription: 'E7x Replacing front passenger airbag (PSPI-2)',
   },
+  '0065020400': {
+    defectCodeDescription: 'I20 Program control units (booster)',
+  },
+  '0032400300': {
+    defectCodeDescription: 'I20 Replace driver\'s airbag',
+  },
+  '0061390700': {
+    defectCodeDescription: 'I20 Program control units (SME)',
+  },
+  '0061630700': {
+    defectCodeDescription: 'I20 Program control units (seat module)',
+  },
+  '0032450300': {
+    defectCodeDescription: 'I20 Program control units (MFL operation/I/O monitor)',
+  },
+  '0061540700': {
+    defectCodeDescription: 'I20 Program control units (seat module)',
+  },
 }
