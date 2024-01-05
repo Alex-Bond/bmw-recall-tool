@@ -156,7 +156,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
     defectCodeDescription: 'Checking, if required, reworking plug connection of blower controller (Part II)',
   },
   '1STOP024773': {
-    defectCodeDescription: 'F25 N47 - Compliance Examination/ Sales Lock',
+    defectCodeDescription: 'Compliance Examination',
   },
   '10064060200': {
     defectCodeDescription: 'Optimising the water drain',
@@ -168,27 +168,27 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
     defectCodeDescription: 'Program control units (DDE)',
   },
   '10032430300': {
-    defectCodeDescription: 'E7x Replace driver\'s airbag (PSDI-5)/ Sales Lock',
+    defectCodeDescription: 'Replace driver\'s airbag (PSDI-5)',
   },
   '10072500200': {
-    defectCodeDescription: 'E7x Replacing front passenger airbag (PSPI-2)',
+    defectCodeDescription: 'Replacing front passenger airbag (PSPI-2)',
   },
   '0065020400': {
-    defectCodeDescription: 'I20 Program control units (booster)',
+    defectCodeDescription: 'Program control units (booster)',
   },
   '0032400300': {
-    defectCodeDescription: 'I20 Replace driver\'s airbag',
+    defectCodeDescription: 'Replace driver\'s airbag',
   },
   '0061390700': {
-    defectCodeDescription: 'I20 Program control units (SME)',
+    defectCodeDescription: 'Program control units (SME)',
   },
   '0061630700': {
-    defectCodeDescription: 'I20 Program control units (seat module)',
+    defectCodeDescription: 'Program control units (seat module)',
   },
   '0032450300': {
-    defectCodeDescription: 'I20 Program control units (MFL operation/I/O monitor)',
+    defectCodeDescription: 'Program control units (MFL)',
   },
   '0061540700': {
-    defectCodeDescription: 'I20 Program control units (seat module)',
+    defectCodeDescription: 'Program control units (seat module)',
   },
 }
