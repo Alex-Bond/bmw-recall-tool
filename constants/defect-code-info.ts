@@ -131,4 +131,46 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0061020800': {
     defectCodeDescription: 'Verify cable bundle in the bumper'
   },
+  '10011350700': {
+    defectCodeDescription: 'Exhaust gas recirculation cooler customer notification',
+  },
+  '10011570600': {
+    defectCodeDescription: 'Replacing the exhaust gas recirculation cooler (high temperature)/ Sales Lock',
+  },
+  '10011150700': {
+    defectCodeDescription: 'Replacing the exhaust gas recirculation cooler (high temperature)/ Sales Lock',
+  },
+  '10011050700': {
+    defectCodeDescription: 'Replacing exhaust-gas recirculation cooler/ Sales Lock',
+  },
+  '10011200700': {
+    defectCodeDescription: 'Replacing exhaust gas recirculation cooler/ Sales Lock',
+  },
+  '10061050500': {
+    defectCodeDescription: 'Installing the repair cable for the positive battery terminal line/ Sales Lock',
+  },
+  '10032740200': {
+    defectCodeDescription: 'Reworking steering gear',
+  },
+  '10061830400': {
+    defectCodeDescription: 'Checking, if required, reworking plug connection of blower controller (Part II)',
+  },
+  '1STOP024773': {
+    defectCodeDescription: 'F25 N47 - Compliance Examination/ Sales Lock',
+  },
+  '10064060200': {
+    defectCodeDescription: 'Optimising the water drain',
+  },
+  '10013850300': {
+    defectCodeDescription: 'Program control units (DDE)',
+  },
+  '10013510300': {
+    defectCodeDescription: 'Program control units (DDE)',
+  },
+  '10032430300': {
+    defectCodeDescription: 'E7x Replace driver\'s airbag (PSDI-5)/ Sales Lock',
+  },
+  '10072500200': {
+    defectCodeDescription: 'E7x Replacing front passenger airbag (PSPI-2)',
+  },
 }
