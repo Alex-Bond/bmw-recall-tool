@@ -20,12 +20,12 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
     (async function req() {
       try {
         const client = new ApiClient()
-        const result = await client.getVinRecals(vin)
+        const result = await client.getVinRecals(vin.toUpperCase())
         if (result.data.status == 'OK') {
           setResponse(result.data)
           setIsSuccess(true)
           setIsLoading(false)
-        } else if(result.data.data.allowAccess == false) {
+        } else if(result.data.data?.allowAccess == false) {
           setErrorMessage('BMW system under maintenance (again)')
           setIsLoading(false)
         }else {
@@ -53,7 +53,7 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
     if (isSuccess) {
       return (
         <>
-          <h2>Results for VIN {vin}</h2>
+          <h2>Results for VIN {vin.toUpperCase()}</h2>
           {response?.data.technicalCampaigns?.length ? (
             <>
               <table className='table'>
