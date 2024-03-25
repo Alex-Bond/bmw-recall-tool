@@ -191,4 +191,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0061540700': {
     defectCodeDescription: 'Program control units (seat module)',
   },
+  '0084900100': {
+    defectCodeDescription: 'Program control units',
+  },
 }
