@@ -194,4 +194,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0084900100': {
     defectCodeDescription: 'Program control units',
   },
+  '0065770400': {
+    defectCodeDescription: 'I20 Programming control units (quality measures)',
+  },
 }
