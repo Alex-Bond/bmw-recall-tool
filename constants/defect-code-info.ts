@@ -197,4 +197,22 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0065770400': {
     defectCodeDescription: 'I20 Programming control units (quality measures)',
   },
+  '0032540300': {
+    defectCodeDescription: 'I20 Replace steering gear',
+  },
+  '0065680400': {
+    defectCodeDescription: 'U10 U11 Updating head unit apps',
+  },
+  '0065690400': {
+    defectCodeDescription: 'F66 J25 Updating head unit apps',
+  },
+  '0065740400': {
+    defectCodeDescription: 'U10 U11 Program control units (quality measures)',
+  },
+  '0065750400': {
+    defectCodeDescription: 'U25 Program control units (quality measures)',
+  },
+  '0065760400': {
+    defectCodeDescription: 'U10 U11 G05 G06 G07 G09 G60 G70 Program control units (quality measures)',
+  },
 }
