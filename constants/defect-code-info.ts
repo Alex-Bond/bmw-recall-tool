@@ -230,4 +230,49 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0011460700': {
     defectCodeDescription: 'G0x G70 Replacing switchable rocker arm exhaust',
   },
+  '0065230400': {
+    defectCodeDescription: 'BMW Operating System 8.5',
+  },
+  '0065240400': {
+    defectCodeDescription: 'I20 BMW Operating System 8.5',
+  },
+  '0064230200': {
+    defectCodeDescription: 'Gx Coolant changeover valve',
+  },
+  '0064240200': {
+    defectCodeDescription: 'I20 Coolant changeover valve',
+  },
+  '0061140800': {
+    defectCodeDescription: 'I20 Program Combined Charging Unit (CCU)',
+  },
+  '0061160700': {
+    defectCodeDescription: 'G26 BEV Replace Combined Charging Unit (CCU)',
+  },
+  '0061170700': {
+    defectCodeDescription: 'I20 Replacing the Combined Charging Unit (CCU)',
+  },
+  '0061250800': {
+    defectCodeDescription: 'Gx Replacing Combined Charging Unit',
+  },
+  '0061460800': {
+    defectCodeDescription: 'G26 Replace Combined Charging Unit (CCU)',
+  },
+  '0061470800': {
+    defectCodeDescription: 'I20 Replace Combined Charging Unit (CCU)',
+  },
+  '0061500700': {
+    defectCodeDescription: 'G09 G70 Program PHEV control unit (CCU)',
+  },
+  '0061890700': {
+    defectCodeDescription: 'Replace Combined Charging Unit (CCU)',
+  },
+  '0061900700': {
+    defectCodeDescription: 'Replace Combined Charging Unit (CCU)',
+  },
+  '0051520500': {
+    defectCodeDescription: 'I20 Replace cover trim with radome heating',
+  },
+  '0084230200': {
+    defectCodeDescription: 'F9x G08 G1x G29 G42 G87 Program control units and include Digital Key (wireless charging tray)',
+  },
 }
