@@ -215,4 +215,19 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0065760400': {
     defectCodeDescription: 'U10 U11 G05 G06 G07 G09 G60 G70 Program control units (quality measures)',
   },
+  '0064290200': {
+    defectCodeDescription: 'I20 Replace coolant changeover valve',
+  },
+  '0064280200': {
+    defectCodeDescription: 'Gx BEV Replace coolant changeover valve',
+  },
+  '0028230100': {
+    defectCodeDescription: 'U11 Reworking DKG connection - transfer box',
+  },
+  '0028240100': {
+    defectCodeDescription: 'U10 U11 Reworking DKG connection - transfer box',
+  },
+  '0011460700': {
+    defectCodeDescription: 'G0x G70 Replacing switchable rocker arm exhaust',
+  },
 }
