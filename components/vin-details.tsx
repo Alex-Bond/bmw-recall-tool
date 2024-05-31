@@ -3,6 +3,7 @@ import axios from 'axios'
 import Link from 'next/link'
 import { DefectCodeInfo } from '../constants/defect-code-info'
 import { ApiClient } from '../services/api.client'
+import { PartGroupNames } from '../constants/part-group'
 
 export const VinDetails: React.FC<{ vin: string }> = (props) => {
   const { vin } = props
@@ -47,6 +48,28 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
     })()
   }, [vin])
 
+  const resolveDefectDescription = (item: { defectCode?: string; defectCodeDescription?: string }): string => {
+    if (item.defectCodeDescription?.length) {
+      return item.defectCodeDescription
+    }
+
+    if (item.defectCode) {
+      const knownCode = DefectCodeInfo[item.defectCode]
+      if (knownCode) {
+        return knownCode.defectCodeDescription
+      }
+
+      const groupMatch = item.defectCode.match(/^00(\d{2})/)
+      if (groupMatch && groupMatch[1]) {
+        const knownGroup = PartGroupNames[groupMatch[1]]
+        if (knownGroup) {
+          return `[UNKNOWN] (${knownGroup})`
+        }
+      }
+    }
+    return ''
+  }
+
   if (isLoading) {
     return (<h2>Loading</h2>)
   } else {
@@ -75,7 +98,7 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
                   <tr key={item.defectCode}>
                     <td>{item.recallType}</td>
                     <td>{item.defectCode}</td>
-                    <td>{item.defectCodeDescription?.length ? item.defectCodeDescription : DefectCodeInfo[item.defectCode]?.defectCodeDescription}</td>
+                    <td>{resolveDefectDescription(item)}</td>
                     <td>{item.reservationDate}</td>
                     <td>{item.vinStatus}</td>
                     <td>{item.reservationDealer}</td>
@@ -104,16 +127,16 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
             <li>
               <strong>Recall Type</strong> can have a value of <code>no recall</code>, which usually means that this
               is <strong>enhancement</strong> (thanks to the great chip shortages) when a car is not yet delivered to
-              the customer.
+              the customer, a delivery stop, or a service action that will be performed at the next dealer visit.
             </li>
             <li>
               <strong>VIN Status</strong> can be <code>open</code> which means that issue is not yet resolved
               or <code>closed</code> for fixed items.
             </li>
             <li>
-              <strong>Code Descriptions</strong> was removed from API recently, but I&apos;m trying to map known defect
+              <strong>Code Descriptions</strong> were removed from API recently, but I&apos;m trying to map known defect
               codes
-              to descriptions. If you don&apos;t see a description for specific code but know what it is, please submit
+              to descriptions. If the description is blank or <code>[UNKNOWN]</code> for specific code and you know what it is, please submit
               the
               issue on GitHub, and I will add it to the tool.
             </li>
