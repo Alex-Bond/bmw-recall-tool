@@ -275,4 +275,22 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0084230200': {
     defectCodeDescription: 'F9x G08 G1x G29 G42 G87 Program control units and include Digital Key (wireless charging tray)',
   },
+  '0034670200': {
+    defectCodeDescription: 'Fx Gx Ux Replacing integrated braking system',
+  },
+  '0064310200': {
+    defectCodeDescription: 'G05 G09 Reworking heater circuit coolant hoses',
+  },
+  '0072630200': {
+    defectCodeDescription: 'Recall 24V-345: Front lower safety belt',
+  },
+  '0012200600': {
+    defectCodeDescription: 'Valvetronic - Program control units (DME)',
+  },
+  '0061330800': {
+    defectCodeDescription: 'G05 PHEV Checking and if necessary, reworking inverter supply line',
+  },
+  '0084300200': {
+    defectCodeDescription: 'Replace wireless charging tray',
+  },
 }
