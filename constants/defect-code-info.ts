@@ -20,6 +20,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0011570600': {
     defectCodeDescription: 'Replacing the exhaust gas recirculation cooler (high temperature)/ Sales Lock',
   },
+  '0012200600': {
+    defectCodeDescription: 'Valvetronic - Program control units (DME)',
+  },
   '0012610500': {
     defectCodeDescription: 'Program control units (DME)',
   },
@@ -68,6 +71,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0032740200': {
     defectCodeDescription: 'Reworking steering gear',
   },
+  '0034670200': {
+    defectCodeDescription: 'Fx Gx Ux Replacing integrated braking system',
+  },
   '0041160200': {
     defectCodeDescription: 'Check the roofing sheet for bonding',
   },
@@ -106,6 +112,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0061250800': {
     defectCodeDescription: 'Gx Replacing Combined Charging Unit',
+  },
+  '0061330800': {
+    defectCodeDescription: 'G05 PHEV Checking and if necessary, reworking inverter supply line',
   },
   '0061390700': {
     defectCodeDescription: 'Program control units (SME)',
@@ -166,6 +175,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0064290200': {
     defectCodeDescription: 'I20 Replace coolant changeover valve',
+  },
+  '0064310200': {
+    defectCodeDescription: 'G05 G09 Reworking heater circuit coolant hoses',
   },
   '0065020400': {
     defectCodeDescription: 'Program control units (booster)',
@@ -248,11 +260,17 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0072500200': {
     defectCodeDescription: 'Replacing front passenger airbag (PSPI-2)',
   },
+  '0072630200': {
+    defectCodeDescription: 'Recall 24V-345: Front lower safety belt',
+  },
   '0084140200': {
     defectCodeDescription: 'Programming the telematics control unit',
   },
   '0084230200': {
     defectCodeDescription: 'F9x G08 G1x G29 G42 G87 Program control units and include Digital Key (wireless charging tray)',
+  },
+  '0084300200': {
+    defectCodeDescription: 'Replace wireless charging tray',
   },
   '0084860100': {
     defectCodeDescription: 'Program Telematics Control Unit (ATM)',
