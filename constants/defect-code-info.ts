@@ -11,14 +11,38 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0011240600': {
     defectCodeDescription: 'Replace the Main Bearing Shells',
   },
+  '0011270600': {
+    defectCodeDescription: 'RECALL 21V-907: F1x N57T N57Z Replacing exhaust gas recirculation cooler (high temperature)',
+  },
+  '0011280600': {
+    defectCodeDescription: 'RECALL 21V-907: F3x N47T Replacing exhaust gas recirculation cooler (high temperature)',
+  },
+  '0011290600': {
+    defectCodeDescription: 'RECALL 21V-907: F02/F15 N57T Replacing exhaust gas recirculation cooler (low temperature)',
+  },
+  '0011300600': {
+    defectCodeDescription: 'RECALL 21V-907: F25 Replacing exhaust gas recirculation cooler (low temperature)',
+  },
   '0011350700': {
     defectCodeDescription: 'Exhaust gas recirculation cooler customer notification',
+  },
+  '0011390600': {
+    defectCodeDescription: 'RECALL 22V-119: E6x E7x E8x E9x N51 N52 N52K Retrofitting component safety device, angle fitting',
   },
   '0011460700': {
     defectCodeDescription: 'G0x G70 Replacing switchable rocker arm exhaust',
   },
+  '0011520700': {
+    defectCodeDescription: 'RECALL 23V-707: Ex Fx N51 N52 N55 Replace VANOS adjuster bolting',
+  },
   '0011570600': {
     defectCodeDescription: 'Replacing the exhaust gas recirculation cooler (high temperature)/ Sales Lock',
+  },
+  '0011590700': {
+    defectCodeDescription: 'RECALL 23V-863: Check and replace the cylinder head cover',
+  },
+  '0011690600': {
+    defectCodeDescription: 'RECALL 22V-614: EXHAUST GAS RECIRCULATION (EGR) COOLER',
   },
   '0012200600': {
     defectCodeDescription: 'Valvetronic - Program control units (DME)',
@@ -26,8 +50,14 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0012610500': {
     defectCodeDescription: 'Program control units (DME)',
   },
+  '0012650500': {
+    defectCodeDescription: 'RECALL 21V-598: PROGRAM CONTROL UNITS (DME)',
+  },
   '0012690500': {
     defectCodeDescription: 'Program the Digital Motor Electronics (DME)',
+  },
+  '0012780500': {
+    defectCodeDescription: 'RECALL 22V-741: REPLACING REAR DRIVE UNIT (HEAT)',
   },
   '0012890500': {
     defectCodeDescription: 'Program Control Unit (DME)',
@@ -35,11 +65,29 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0012940500': {
     defectCodeDescription: 'Electric Front Axle Drive Unit',
   },
+  '0013390300': {
+    defectCodeDescription: 'RECALL 21V-586: F0x F1x F2x F3x N47 N57 Replacing high pressure pump',
+  },
   '0013510300': {
     defectCodeDescription: 'Program control units (DDE)',
   },
+  '0013810300': {
+    defectCodeDescription: 'RECALL 22V-513: Replacing high pressure fuel rail',
+  },
   '0013850300': {
     defectCodeDescription: 'Program control units (DDE) due to deposits in the intake system',
+  },
+  '0016610200': {
+    defectCodeDescription: 'RECALL 21V-199: G01 G02 F97 Replacing fuel tank',
+  },
+  '0018940100': {
+    defectCodeDescription: 'RECALL 23V-294: G0x Rework exhaust system',
+  },
+  '0024660100': {
+    defectCodeDescription: 'RECALL 22V-070: G0x G20 G30 Replacing automatic transmission mechatronics',
+  },
+  '0024730100': {
+    defectCodeDescription: 'RECALL 23V-821: F9x Gx Replacing transmission mechatronics',
   },
   '0028110100': {
     defectCodeDescription: 'Programming control units (DKG)',
@@ -50,20 +98,35 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0028240100': {
     defectCodeDescription: 'U10 U11 Reworking DKG connection - transfer box',
   },
+  '0032180300': {
+    defectCodeDescription: 'RECALL 21V-031: STEERING SPINDLE',
+  },
+  '0032200300': {
+    defectCodeDescription: 'RECALL 21V-401: DRIVER’S FRONT AIR BAG (NADI) INFLATOR',
+  },
   '0032350300': {
     defectCodeDescription: 'G26 Program Control Unit (software update)',
   },
   '0032400300': {
-    defectCodeDescription: "Replace driver's airbag",
+    defectCodeDescription: "RECALL 23V-079: Replace driver's airbag",
+  },
+  '0032410300': {
+    defectCodeDescription: "RECALL 23V-079: U11 Replace driver's airbag",
   },
   '0032430300': {
     defectCodeDescription: "Replace driver's airbag (PSDI-5)",
   },
   '0032450300': {
-    defectCodeDescription: 'Program control units (MFL)',
+    defectCodeDescription: 'RECALL 23V-409: PROGRAM CONTROL UNITS (MFL)',
   },
   '0032470300': {
-    defectCodeDescription: 'Steering wheel ground connection recall',
+    defectCodeDescription: 'RECALL 23V-700: STEERING WHEEL GROUND CONNECTIONS',
+  },
+  '0032480300': {
+    defectCodeDescription: 'RECALL 23V-770: G01 G02 G20 G42 Replace steering gear',
+  },
+  '0032490300': {
+    defectCodeDescription: 'RECALL 23V-797: DRIVER AIR BAG',
   },
   '0032540300': {
     defectCodeDescription: 'I20 Replace steering gear',
@@ -71,17 +134,65 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0032740200': {
     defectCodeDescription: 'Reworking steering gear',
   },
+  '0033170200': {
+    defectCodeDescription: 'RECALL 21V-046: Output Shaft(s)',
+  },
+  '0034550200': {
+    defectCodeDescription: 'RECALL 21V-062: F9x G0x G1x G8x Replacing brake booster hydraulic unit',
+  },
+  '0034560200': {
+    defectCodeDescription: 'RECALL 21V-089: G05 Checking and if necessary replacing front brake',
+  },
   '0034670200': {
-    defectCodeDescription: 'Fx Gx Ux Replacing integrated braking system',
+    defectCodeDescription: 'RECALL 24V-104: Fx Gx Ux Replacing integrated braking system',
   },
   '0041160200': {
     defectCodeDescription: 'Check the roofing sheet for bonding',
   },
+  '0051220500': {
+    defectCodeDescription: 'RECALL 21V-342: F22 F87 Checking & if nec. reworking headliner',
+  },
+  '0051270500': {
+    defectCodeDescription: 'RECALL 21V-520: Replace the panel for instrument panel',
+  },
+  '0051340500': {
+    defectCodeDescription: 'RECALL 21V-831: REAR LICENSE PLATE ILLUMINATION',
+  },
   '0051520500': {
     defectCodeDescription: 'I20 Replace cover trim with radome heating',
   },
+  '0051550500': {
+    defectCodeDescription: 'RECALL 22V-820: WINDSHIELD NOT PROPERLY BONDED',
+  },
+  '0051810500': {
+    defectCodeDescription: 'RECALL 24V-138: Dashboard',
+  },
+  '0051820500': {
+    defectCodeDescription: 'RECALL 24V-139: Tailgate outer body panel',
+  },
+  '0052070200': {
+    defectCodeDescription: 'RECALL 22V-670: G07 Check backrest frame on 3rd row seating and rectify as necessary',
+  },
+  '0052080200': {
+    defectCodeDescription: 'RECALL 22V-942: CHECK THE DRIVERS SEAT BACKREST FRAME SCREWS',
+  },
+  '0052090200': {
+    defectCodeDescription: 'RECALL 23V-039: G42 G87 US Replace side section of rear seat backrest',
+  },
+  '0052100200': {
+    defectCodeDescription: 'RECALL 23V-211: FRONT SEAT FRAME',
+  },
+  '0052110200': {
+    defectCodeDescription: 'RECALL 23V-253: 2nd ROW HEAD RESTRAINTS',
+  },
   '0052130200': {
-    defectCodeDescription: 'Seat rail recall',
+    defectCodeDescription: 'RECALL 23V-414: FRONT SEAT RAILS',
+  },
+  '0052970100': {
+    defectCodeDescription: 'RECALL 21V-156: OUTER HEADREST SECOND ROW',
+  },
+  '0052990100': {
+    defectCodeDescription: 'RECALL 21V-521: G01 G02 Replacing cushion (CIS), front passenger seat',
   },
   '0061020800': {
     defectCodeDescription: 'Verify cable bundle in the bumper',
@@ -95,8 +206,11 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0061070600': {
     defectCodeDescription: 'Program control units (BDC)',
   },
+  '0061100700': {
+    defectCodeDescription: 'RECALL 22V-683: I01 Replace cell module of high-voltage battery',
+  },
   '0061100800': {
-    defectCodeDescription: 'Wiper mechanism recall',
+    defectCodeDescription: 'Recall 23V-644: G70 Check wiper linkage and replace if necessary',
   },
   '0061140800': {
     defectCodeDescription: 'I20 Program Combined Charging Unit (CCU)',
@@ -116,11 +230,17 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0061330800': {
     defectCodeDescription: 'G05 PHEV Checking and if necessary, reworking inverter supply line',
   },
+  '0061360800': {
+    defectCodeDescription: 'RECALL 24V-135: REPLACING THE CELL MODULE OF HIGH- VOLTAGE BATTERY',
+  },
   '0061390700': {
-    defectCodeDescription: 'Program control units (SME)',
+    defectCodeDescription: 'RECALL 22V-944: Program control units (SME)',
   },
   '0061400700': {
-    defectCodeDescription: 'Program Control Units (SME) - battery management electronics module',
+    defectCodeDescription: 'RECALL 22V-944: Program Control Units (SME) - battery management electronics module',
+  },
+  '0061460700': {
+    defectCodeDescription: 'RECALL 23V-050: FRONT PASSENGER AIR BAG',
   },
   '0061460800': {
     defectCodeDescription: 'G26 Replace Combined Charging Unit (CCU)',
@@ -131,6 +251,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0061500700': {
     defectCodeDescription: 'G09 G70 Program PHEV control unit (CCU)',
   },
+  '0061510700': {
+    defectCodeDescription: 'RECALL 23V-118: RESET VEHICLE DATA AFTER BDC REPLACEMENT',
+  },
   '0061540700': {
     defectCodeDescription: 'Program control units (seat module)',
   },
@@ -139,6 +262,12 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0061640400': {
     defectCodeDescription: 'Program control units (GWS)',
+  },
+  '0061670600': {
+    defectCodeDescription: 'RECALL 22V-267: G05 G06 G07 F95 F96 G26 Programming control units (FZD)',
+  },
+  '0061720700': {
+    defectCodeDescription: 'RECALL 23V-295: G26 Replace BEV cell supervision circuit',
   },
   '0061830400': {
     defectCodeDescription: 'Checking, if required, reworking plug connection of blower controller (Part II)',
@@ -153,13 +282,25 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
     defectCodeDescription: 'Checking the high-voltage connection field and replacing it if necessary',
   },
   '0061890700': {
-    defectCodeDescription: 'Replace Combined Charging Unit (CCU)',
+    defectCodeDescription: 'RECALL 23V-449: Replace Combined Charging Unit (CCU)',
   },
   '0061900700': {
     defectCodeDescription: 'Replace Combined Charging Unit (CCU)',
   },
+  '0061910700': {
+    defectCodeDescription: 'RECALL 23V-479: INTERACTION BAR',
+  },
+  '0061920500': {
+    defectCodeDescription: 'RECALL 21V-091: SUNROOF OPERATION',
+  },
   '0061960600': {
-    defectCodeDescription: 'Recall: High-Voltage Battery',
+    defectCodeDescription: 'RECALL 22V-541: I20 Replacing cell module, high-voltage battery',
+  },
+  '0061970600': {
+    defectCodeDescription: 'RECALL 22V-541: G26 BEV Replacing high-voltage battery cell module',
+  },
+  '0063840100': {
+    defectCodeDescription: 'RECALL 22V-725: FRONT LAMPS',
   },
   '0064060200': {
     defectCodeDescription: 'Optimising the water drain',
@@ -182,6 +323,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0065020400': {
     defectCodeDescription: 'Program control units (booster)',
   },
+  '0065080400': {
+    defectCodeDescription: 'RECALL 23V-026: I20 Program control units (RAM - active pedestrian protection driving noise)',
+  },
   '0065210400': {
     defectCodeDescription: 'Program control units (head unit)',
   },
@@ -190,6 +334,15 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0065240400': {
     defectCodeDescription: 'I20 BMW Operating System 8.5',
+  },
+  '0065320400': {
+    defectCodeDescription: 'RECALL 23V-584: RECEIVER AUDIO MODULE',
+  },
+  '0065460300': {
+    defectCodeDescription: 'RECALL 21V-176: G23 US Programming control units (side airbag)',
+  },
+  '0065470400': {
+    defectCodeDescription: 'RECALL 23V-885: Receiver Audio Module',
   },
   '0065480300': {
     defectCodeDescription: 'Retrofitting the receiver audio module',
@@ -216,7 +369,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
     defectCodeDescription: 'U10 U11 Program control units (quality measures)',
   },
   '0065750300': {
-    defectCodeDescription: 'Programming control units (airbag control unit)',
+    defectCodeDescription: 'RECALL 22V-240: Programming control units (airbag control unit)',
   },
   '0065750400': {
     defectCodeDescription: 'U25 Program control units (quality measures)',
@@ -228,22 +381,28 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
     defectCodeDescription: 'I20 Programming control units (quality measures)',
   },
   '0065780300': {
-    defectCodeDescription: 'Programming control units part II (airbag control unit)',
+    defectCodeDescription: 'RECALL 22V-240: Programming control units part II (airbag control unit)',
   },
   '0065800300': {
-    defectCodeDescription: 'Programming control units (head unit)',
+    defectCodeDescription: 'RECALL 22V-483: Valet Parking Mode - I20 Program control units (head unit)',
   },
   '0065810300': {
     defectCodeDescription: 'Programming control units (head unit)',
   },
   '0065820300': {
-    defectCodeDescription: 'Recall: Valet Parking Mode - Programming control units (head unit)',
+    defectCodeDescription: 'RECALL 22V-483: Valet Parking Mode - Programming control units (head unit)',
   },
   '0065830300': {
     defectCodeDescription: 'Programming control units (head unit)',
   },
+  '0065960300': {
+    defectCodeDescription: 'RECALL 22V-747: REARVIEW CAMERA',
+  },
   '0065980300': {
     defectCodeDescription: 'Booster Control Unit',
+  },
+  '0066490100': {
+    defectCodeDescription: 'RECALL 21V-096: REARVIEW CAMERA',
   },
   '0066530100': {
     defectCodeDescription: 'Checking the installation of camera, retrofitting if necessary',
@@ -257,14 +416,41 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0066640100': {
     defectCodeDescription: 'Retrofit PMA Control Unit',
   },
+  '0071240300': {
+    defectCodeDescription: 'RECALL 24V-327: Tire pressure label',
+  },
+  '0071840200': {
+    defectCodeDescription: 'RECALL 21V-646: TIRE PRESSURE LABEL',
+  },
+  '0072250200': {
+    defectCodeDescription: 'RECALL 21V-298: FRONT SEAT SAFETY BELT BUCKLE',
+  },
+  '0072300200': {
+    defectCodeDescription: 'RECALL 21V-554: Fx Gx Checking safety belt',
+  },
+  '0072490200': {
+    defectCodeDescription: 'RECALL 23V-260: SAFETY BELT REAR SEAT (LEFT AND RIGHT)',
+  },
   '0072500200': {
     defectCodeDescription: 'Replacing front passenger airbag (PSPI-2)',
   },
+  '0072510200': {
+    defectCodeDescription: 'RECALL 23V-471: REPLACE KNEE AIR BAG',
+  },
+  '0072560200': {
+    defectCodeDescription: 'RECALL 23V-622: FRONT PASSENGER KNEE AIR BAG',
+  },
   '0072630200': {
-    defectCodeDescription: 'Recall 24V-345: Front lower safety belt',
+    defectCodeDescription: 'RECALL 24V-345: Front lower safety belt',
   },
   '0084140200': {
     defectCodeDescription: 'Programming the telematics control unit',
+  },
+  '0084210200': {
+    defectCodeDescription: 'RECALL 22V-860: TELEMATICS CONTROL UNIT',
+  },
+  '0084220200': {
+    defectCodeDescription: 'RECALL 23V-099: F9x G08 G1x G29 G42 G87 Program control units and include Digital Key (wireless charging tray)',
   },
   '0084230200': {
     defectCodeDescription: 'F9x G08 G1x G29 G42 G87 Program control units and include Digital Key (wireless charging tray)',
