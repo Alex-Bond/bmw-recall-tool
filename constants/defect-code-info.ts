@@ -137,6 +137,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0033170200': {
     defectCodeDescription: 'RECALL 21V-046: Output Shaft(s)',
   },
+  '0033290200': {
+    defectCodeDescription: 'DELIVERY STOP: WHEEL ALIGNMENT',
+  },
   '0034550200': {
     defectCodeDescription: 'RECALL 21V-062: F9x G0x G1x G8x Replacing brake booster hydraulic unit',
   },
