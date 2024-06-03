@@ -206,6 +206,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0061050500': {
     defectCodeDescription: 'Installing the repair cable for the positive battery terminal line/ Sales Lock',
   },
+  '0061060800': {
+    defectCodeDescription: 'G60 Replacing the control unit, contactless tailgate opening',
+  },
   '0061070600': {
     defectCodeDescription: 'Program control units (BDC)',
   },
@@ -341,6 +344,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0065320400': {
     defectCodeDescription: 'RECALL 23V-584: RECEIVER AUDIO MODULE',
   },
+  '0065450400': {
+    defectCodeDescription: 'G26 G60 G70 Programming control units (head unit)',
+  },
   '0065460300': {
     defectCodeDescription: 'RECALL 21V-176: G23 US Programming control units (side airbag)',
   },
@@ -349,6 +355,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0065480300': {
     defectCodeDescription: 'Retrofitting the receiver audio module',
+  },
+  '0065490400': {
+    defectCodeDescription: 'Quality Measure Software Update',
   },
   '0065600300': {
     defectCodeDescription: 'Checking the installation of amplifier, retrofitting if necessary (note: not confirmed message)',
@@ -469,6 +478,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0084980100': {
     defectCodeDescription: 'Programming the control units (quality measures)',
+  },
+  '0099600200': {
+    defectCodeDescription: 'G05 G07 Insert updated leaflet into owner’s manual',
   },
   INFO123825: {
     defectCodeDescription: 'I20 - ADCAM low Zertifikatefehler bei Programmierung',
