@@ -48,24 +48,11 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
     })()
   }, [vin])
 
-  const resolveDefectDescription = (item: { defectCode?: string; defectCodeDescription?: string }): string => {
-    if (item.defectCodeDescription?.length) {
-      return item.defectCodeDescription
-    }
-
-    if (item.defectCode) {
-      const knownCode = DefectCodeInfo[item.defectCode]
-      if (knownCode) {
-        return knownCode.defectCodeDescription
-      }
-
-      const groupMatch = item.defectCode.match(/^00(\d{2})/)
-      if (groupMatch && groupMatch[1]) {
-        const knownGroup = PartGroupNames[groupMatch[1]]
-        if (knownGroup) {
-          return `[UNKNOWN] (${knownGroup})`
-        }
-      }
+  const resolvePartGroup = (defectCode?: string): string => {
+    const groupMatch = (defectCode ?? '').match(/^00(\d{2})/)
+    if (groupMatch && groupMatch[1]) {
+      const knownGroup = PartGroupNames[groupMatch[1]]
+      return knownGroup ?? ''
     }
     return ''
   }
@@ -85,6 +72,7 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
                   <th>Recall Type</th>
                   <th>Defect Code</th>
                   <th>Defect Code Description</th>
+                  <th>Part Group</th>
                   <th>Reservation Date</th>
                   <th>VIN Status</th>
                   <th>Reservation Dealer</th>
@@ -98,7 +86,8 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
                   <tr key={item.defectCode}>
                     <td>{item.recallType}</td>
                     <td>{item.defectCode}</td>
-                    <td>{resolveDefectDescription(item)}</td>
+                    <td>{item.defectCodeDescription?.length ? item.defectCodeDescription : DefectCodeInfo[item.defectCode]?.defectCodeDescription}</td>
+                    <td>{resolvePartGroup(item.defectCode)}</td>
                     <td>{item.reservationDate}</td>
                     <td>{item.vinStatus}</td>
                     <td>{item.reservationDealer}</td>
@@ -136,7 +125,7 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
             <li>
               <strong>Code Descriptions</strong> were removed from API recently, but I&apos;m trying to map known defect
               codes
-              to descriptions. If the description is blank or <code>[UNKNOWN]</code> for specific code and you know what it is, please submit
+              to descriptions. If you don&apos;t see a description for a specific code but know what it is, please submit
               the
               issue on GitHub, and I will add it to the tool.
             </li>
