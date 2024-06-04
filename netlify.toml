@@ -1,5 +1,7 @@
 [build]
 functions = "netlify/functions"
+command = "npm run build"
+publish = ".next"
 
 [functions]
 node_bundler = "esbuild"
@@ -7,7 +9,3 @@ external_node_modules = ["axios","node-cryptojs-aes"]
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
-
-[build]
-command = "npm run build"
-publish = ".next"
