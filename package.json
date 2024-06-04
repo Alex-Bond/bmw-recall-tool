@@ -2,6 +2,9 @@
   "name": "bmw_recall_nextjs",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "~20"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,17 +13,18 @@
   },
   "dependencies": {
     "@netlify/functions": "^2",
-    "axios": "^0.27.2",
-    "next": "~12.3.0",
+    "@netlify/plugin-nextjs": "^5.3.2",
+    "axios": "1.7.2",
+    "next": "^14.2.3",
     "node-cryptojs-aes": "^0.4.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/node": "20.7.1",
-    "@types/react": "17.0.27",
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2",
-    "typescript": "4.4.3"
+    "@types/node": "20.14.1",
+    "@types/react": "18.3.3",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.2.3",
+    "typescript": "5.4.5"
   }
 }
