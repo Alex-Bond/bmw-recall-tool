@@ -2,6 +2,9 @@
   "name": "bmw_recall_nextjs",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "~20"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,6 +13,7 @@
   },
   "dependencies": {
     "@netlify/functions": "^2",
+    "@netlify/plugin-nextjs": "^5.3.2",
     "axios": "1.7.2",
     "next": "^14.2.3",
     "node-cryptojs-aes": "^0.4.0",
