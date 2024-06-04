@@ -91,7 +91,7 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
             <h3 className='my-5'>No open issues found</h3>
           )}
 
-          <Link href='/'><a className='btn btn-primary btn-block'>Try different VIN</a></Link>
+          <Link href='/' className='btn btn-primary btn-block'>Try different VIN</Link>
 
           <hr />
           <h4>Couple notes:</h4>
@@ -124,7 +124,7 @@ export const VinDetails: React.FC<{ vin: string }> = (props) => {
       return (
         <>
           <h2>Error while requesting details: {errorMessage}</h2>
-          <Link href='/'><a className='btn btn-primary btn-block'>Try different VIN</a></Link>
+          <Link href='/' className='btn btn-primary btn-block'>Try different VIN</Link>
         </>
       )
     }
