@@ -1,5 +1,7 @@
 [build]
 functions = "netlify/functions"
+command = "npm run build"
+publish = ".next"
 
 [functions]
 node_bundler = "esbuild"
