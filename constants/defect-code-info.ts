@@ -1,4 +1,7 @@
 export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } } = {
+  '0000001100': {
+    defectCodeDescription: 'Takata Airbag Recall Identification',
+  },
   '0011050700': {
     defectCodeDescription: 'Replacing exhaust-gas recirculation cooler/ Sales Lock',
   },
@@ -35,6 +38,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0011520700': {
     defectCodeDescription: 'RECALL 23V-707: Ex Fx N51 N52 N55 Replace VANOS adjuster bolting',
   },
+  '0011530400': {
+    defectCodeDescription: 'G12 N63R replacing the exhaust turbocharger coolant lines',
+  },
   '0011570600': {
     defectCodeDescription: 'Replacing the exhaust gas recirculation cooler (high temperature)/ Sales Lock',
   },
@@ -43,6 +49,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0011690600': {
     defectCodeDescription: 'RECALL 22V-614: EXHAUST GAS RECIRCULATION (EGR) COOLER',
+  },
+  '0012080600': {
+    defectCodeDescription: 'G01 G02 Reworking ground strap bolting',
   },
   '0012200600': {
     defectCodeDescription: 'Valvetronic - Program control units (DME)',
@@ -62,6 +71,12 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0012890500': {
     defectCodeDescription: 'Program Control Unit (DME)',
   },
+  '0012920500': {
+    defectCodeDescription: 'I20 Replace electric front axle drive unit',
+  },
+  '0012930500': {
+    defectCodeDescription: 'G26 G70 BEV Replace electric front axle drive unit',
+  },
   '0012940500': {
     defectCodeDescription: 'Electric Front Axle Drive Unit',
   },
@@ -80,17 +95,38 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0016610200': {
     defectCodeDescription: 'RECALL 21V-199: G01 G02 F97 Replacing fuel tank',
   },
+  '0016660200': {
+    defectCodeDescription: 'G05 PHEV Correcting EVAP system line routing',
+  },
+  '0016780200': {
+    defectCodeDescription: 'PROGRAM CONTROL UNITS (IFM/TFE)',
+  },
+  '0016810200': {
+    defectCodeDescription: 'DELIVERY STOP: DIAGNOSTIC MODULE FOR TANK LEAKS',
+  },
+  '0016840200': {
+    defectCodeDescription: 'G0x G60 G70 U11 B38 B48 B58 S68 Program control units (TFE)',
+  },
+  '0017150200': {
+    defectCodeDescription: 'F2x F3x B46 B48 Replacing cylinder head ventilation line',
+  },
   '0018940100': {
     defectCodeDescription: 'RECALL 23V-294: G0x Rework exhaust system',
   },
   '0024660100': {
     defectCodeDescription: 'RECALL 22V-070: G0x G20 G30 Replacing automatic transmission mechatronics',
   },
+  '0024720100': {
+    defectCodeDescription: 'DELIVERY STOP: PROGRAM CONTROL UNIT (EGS)',
+  },
   '0024730100': {
     defectCodeDescription: 'RECALL 23V-821: F9x Gx Replacing transmission mechatronics',
   },
   '0028110100': {
     defectCodeDescription: 'Programming control units (DKG)',
+  },
+  '0028220100': {
+    defectCodeDescription: 'PROGRAM THE TRANSMISSION CONTROL UNIT (EGS)',
   },
   '0028230100': {
     defectCodeDescription: 'U11 Reworking DKG connection - transfer box',
@@ -152,6 +188,12 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0041160200': {
     defectCodeDescription: 'Check the roofing sheet for bonding',
   },
+  '0041180200': {
+    defectCodeDescription: 'G07 Rework the wheel arch end plate',
+  },
+  '0041190200': {
+    defectCodeDescription: 'G06 Check the front seat console and rework if necessary',
+  },
   '0051220500': {
     defectCodeDescription: 'RECALL 21V-342: F22 F87 Checking & if nec. reworking headliner',
   },
@@ -161,11 +203,17 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0051340500': {
     defectCodeDescription: 'RECALL 21V-831: REAR LICENSE PLATE ILLUMINATION',
   },
+  '0051500500': {
+    defectCodeDescription: 'CHECK THE LIN MODULE IN THE MIRRORS',
+  },
   '0051520500': {
     defectCodeDescription: 'I20 Replace cover trim with radome heating',
   },
   '0051550500': {
     defectCodeDescription: 'RECALL 22V-820: WINDSHIELD NOT PROPERLY BONDED',
+  },
+  '0051690500': {
+    defectCodeDescription: 'G05 G07 G09 Checking rear bumper support, replacing if necessary',
   },
   '0051810500': {
     defectCodeDescription: 'RECALL 24V-138: Dashboard',
@@ -211,6 +259,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0061070600': {
     defectCodeDescription: 'Program control units (BDC)',
+  },
+  '0061090800': {
+    defectCodeDescription: 'I20 Replacing cell module, high-voltage battery',
   },
   '0061100700': {
     defectCodeDescription: 'RECALL 22V-683: I01 Replace cell module of high-voltage battery',
@@ -263,6 +314,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0061540700': {
     defectCodeDescription: 'Program control units (seat module)',
   },
+  '0061560700': {
+    defectCodeDescription: 'Resetting vehicle data',
+  },
   '0061630700': {
     defectCodeDescription: 'Program control units (seat module)',
   },
@@ -307,6 +361,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0063840100': {
     defectCodeDescription: 'RECALL 22V-725: FRONT LAMPS',
+  },
+  '0063870100': {
+    defectCodeDescription: 'G07 Replace Frontal Light Electronics',
   },
   '0064060200': {
     defectCodeDescription: 'Optimising the water drain',
@@ -362,6 +419,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0065600300': {
     defectCodeDescription: 'Checking the installation of amplifier, retrofitting if necessary (note: not confirmed message)',
   },
+  '0065620300': {
+    defectCodeDescription: 'G0x F9x Replacing ACSM control unit',
+  },
   '0065630300': {
     defectCodeDescription: 'Retrofitting the central information display',
   },
@@ -373,6 +433,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0065690400': {
     defectCodeDescription: 'F66 J25 Updating head unit apps',
+  },
+  '0065700400': {
+    defectCodeDescription: 'PROGRAM HEAD UNIT – i20',
   },
   '0065740300': {
     defectCodeDescription: 'Programming control units (head unit)',
@@ -428,6 +491,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0066640100': {
     defectCodeDescription: 'Retrofit PMA Control Unit',
   },
+  '0066730100': {
+    defectCodeDescription: 'DELIVERY STOP: HANDS-OFF OPTION MISSING',
+  },
   '0071240300': {
     defectCodeDescription: 'RECALL 24V-327: Tire pressure label',
   },
@@ -476,6 +542,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0084900100': {
     defectCodeDescription: 'Program control units',
   },
+  '0084930100': {
+    defectCodeDescription: 'I20 Programming control units (telematics control unit)',
+  },
   '0084980100': {
     defectCodeDescription: 'Programming the control units (quality measures)',
   },
@@ -491,4 +560,4 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   STOP024773: {
     defectCodeDescription: 'Compliance Examination',
   },
-};
+}
