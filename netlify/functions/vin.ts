@@ -16,7 +16,7 @@ export const handler: Handler = async (event, context) => {
     const resp = await axios.get<{
       status: string,
       data: {
-        technicalCampaigns: [{ [key: string]: string }]
+        technicalCampaigns?: [{ [key: string]: string }]
         vin: string
         vinStatus: string
       }
@@ -38,7 +38,7 @@ export const handler: Handler = async (event, context) => {
     console.log({
       status: resp.data.status,
       vin: resp.data.data.vin,
-      recalls: resp.data.data.technicalCampaigns.reduce((o, i) => {
+      recalls: resp.data.data.technicalCampaigns?.reduce((o, i) => {
         o[i.defectCode] = i.defectCodeDescription
         return o
       }, {}),
