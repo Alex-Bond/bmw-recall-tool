@@ -144,13 +144,13 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
     defectCodeDescription: 'G26 Program Control Unit (software update)',
   },
   '0032400300': {
-    defectCodeDescription: "RECALL 23V-079: Replace driver's airbag",
+    defectCodeDescription: 'RECALL 23V-079: Replace driver\'s airbag',
   },
   '0032410300': {
-    defectCodeDescription: "RECALL 23V-079: U11 Replace driver's airbag",
+    defectCodeDescription: 'RECALL 23V-079: U11 Replace driver\'s airbag',
   },
   '0032430300': {
-    defectCodeDescription: "Replace driver's airbag (PSDI-5)",
+    defectCodeDescription: 'Replace driver\'s airbag (PSDI-5)',
   },
   '0032450300': {
     defectCodeDescription: 'RECALL 23V-409: PROGRAM CONTROL UNITS (MFL)',
@@ -215,11 +215,23 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0051690500': {
     defectCodeDescription: 'G05 G07 G09 Checking rear bumper support, replacing if necessary',
   },
+  '0051770500': {
+    defectCodeDescription: 'Check rear spoiler, replace if necessary',
+  },
+  '0051790500': {
+    defectCodeDescription: 'Check front floor mat, replace if necessary',
+  },
+  '0051800500': {
+    defectCodeDescription: 'Check rear tow eye cover, replace if necessary',
+  },
   '0051810500': {
     defectCodeDescription: 'RECALL 24V-138: Dashboard',
   },
   '0051820500': {
     defectCodeDescription: 'RECALL 24V-139: Tailgate outer body panel',
+  },
+  '0051890500': {
+    defectCodeDescription: 'Body equipment',
   },
   '0052070200': {
     defectCodeDescription: 'RECALL 22V-670: G07 Check backrest frame on 3rd row seating and rectify as necessary',
@@ -287,6 +299,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0061330800': {
     defectCodeDescription: 'G05 PHEV Checking and if necessary, reworking inverter supply line',
   },
+  '0061340800': {
+    defectCodeDescription: 'Check rear seat wiring harness installation',
+  },
   '0061360800': {
     defectCodeDescription: 'RECALL 24V-135: REPLACING THE CELL MODULE OF HIGH- VOLTAGE BATTERY',
   },
@@ -304,6 +319,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0061470800': {
     defectCodeDescription: 'I20 Replace Combined Charging Unit (CCU)',
+  },
+  '0061490800': {
+    defectCodeDescription: 'Program control units (SME)',
   },
   '0061500700': {
     defectCodeDescription: 'G09 G70 Program PHEV control unit (CCU)',
@@ -364,6 +382,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0063870100': {
     defectCodeDescription: 'G07 Replace Frontal Light Electronics',
+  },
+  '0063920100': {
+    defectCodeDescription: 'Check LED headlights, replace if necessary',
   },
   '0064060200': {
     defectCodeDescription: 'Optimising the water drain',
@@ -493,6 +514,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0066730100': {
     defectCodeDescription: 'DELIVERY STOP: HANDS-OFF OPTION MISSING',
+  },
+  '0071200300': {
+    defectCodeDescription: 'Retrofit rescue separation point sign',
   },
   '0071240300': {
     defectCodeDescription: 'RECALL 24V-327: Tire pressure label',
