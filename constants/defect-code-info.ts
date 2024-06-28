@@ -110,6 +110,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0017150200': {
     defectCodeDescription: 'F2x F3x B46 B48 Replacing cylinder head ventilation line',
   },
+  '0017220200': {
+    defectCodeDescription: 'F9x S63M Replace coolant expansion tank',
+  },
   '0018940100': {
     defectCodeDescription: 'RECALL 23V-294: G0x Rework exhaust system',
   },
@@ -121,6 +124,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0024730100': {
     defectCodeDescription: 'RECALL 23V-821: F9x Gx Replacing transmission mechatronics',
+  },
+  '0024750100': {
+    defectCodeDescription: 'G0x G60 Replace transmission mechatronics',
   },
   '0028110100': {
     defectCodeDescription: 'Programming control units (DKG)',
@@ -156,7 +162,7 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
     defectCodeDescription: 'RECALL 23V-409: PROGRAM CONTROL UNITS (MFL)',
   },
   '0032470300': {
-    defectCodeDescription: 'RECALL 23V-700: STEERING WHEEL GROUND CONNECTIONS',
+    defectCodeDescription: 'RECALL 23V-700: G60 G70 Check steering wheel (incorrect ground cable bolting)',
   },
   '0032480300': {
     defectCodeDescription: 'RECALL 23V-770: G01 G02 G20 G42 Replace steering gear',
@@ -335,6 +341,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0061560700': {
     defectCodeDescription: 'Resetting vehicle data',
   },
+  '0061590800': {
+    defectCodeDescription: 'G70 BEV Retrofitting abrasion protection for high-voltage cable of rear electric drive unit',
+  },
   '0061630700': {
     defectCodeDescription: 'Program control units (seat module)',
   },
@@ -485,6 +494,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   '0065810300': {
     defectCodeDescription: 'Programming control units (head unit)',
   },
+  '0065810400': {
+    defectCodeDescription: 'VARIOUS KEY FUNCTIONS INACTIVE',
+  },
   '0065820300': {
     defectCodeDescription: 'RECALL 22V-483: Valet Parking Mode - Programming control units (head unit)',
   },
@@ -574,6 +586,9 @@ export const DefectCodeInfo: { [key: string]: { defectCodeDescription: string } 
   },
   '0099600200': {
     defectCodeDescription: 'G05 G07 Insert updated leaflet into owner’s manual',
+  },
+  '0099630200': {
+    defectCodeDescription: "ADD INSERT TO THE OWNER'S MANUAL",
   },
   INFO123825: {
     defectCodeDescription: 'I20 - ADCAM low Zertifikatefehler bei Programmierung',
