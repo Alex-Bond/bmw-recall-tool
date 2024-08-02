@@ -8,6 +8,10 @@ const Vin: NextPage = () => {
   const router = useRouter()
 
   useEffect(() => {
+    router.push('/')
+  }, [])
+
+  useEffect(() => {
     if (Array.isArray(router.query.vin) || (router.query.vin && router.query.vin.length != 17)) {
       console.log(router.query.vin)
       router.push('/')
