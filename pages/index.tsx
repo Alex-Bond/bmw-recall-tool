@@ -19,7 +19,7 @@ const Home: NextPage = () => (
       - <a href='https://g80.bimmerpost.com/forums/showthread.php?t=1865007&highlight=vehiclerecall.bmwgroup.com'
            target='_blank'>link</a>
     </p>
-    <p>As for this tool's future - I may add here the list of codes we collected over time (you can check
+    <p>As for this tool&apos;s future - I may add here the list of codes we collected over time (you can check
       them <a href='https://github.com/Alex-Bond/bmw-recall-tool/blob/main/constants/defect-code-info.ts'
               target='_blank'>here</a>) some day in the future, but for now I will leave it as is.</p>
     <p>I want to thank all the contributors who helped collect the codes, especially @itsanalogue, for making the tool a
